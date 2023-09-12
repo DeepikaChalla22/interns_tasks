@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        table,th,tr,td{
+            border: 2px solid black;
+            /* border-collapse: collapse; */
+            background-color:rgb(54, 197, 205);
+            width: 1000px;
+            text-align: center;
+            border-radius: 15px;
+            padding: 5px 5px;
+        }
+        table{
+            /* margin-right: auto;
+            margin-left: auto; */
+            margin-top: 50px;
+            margin-left: 50px;
+        }
+        td{
+            text-align:left;
+        }
+        .boxes{
+            /* border: 2px solid black; */
+            margin-top: 50px;
+            text-align: center;
+            display: grid;
+           grid-template-columns:200PX 200PX 200PX;
+           grid-column-gap: 5rem;
+           grid-row-gap: 2rem;
+           
+        }
+        .box{
+            margin: 5px 250px;
+            width:200px;
+            height: 120px;
+            border: 2px solid rgb(68, 181, 68);
+            /* display: flex;
+            flex-direction: column; */
+
+        }
+        #box1{
+            border-radius: 7px;
+        }
+        #box2{
+            border-radius: 10px;
+        }
+        #box3{
+            border-radius: 25px;
+        }
+        #box4{
+            border-radius: 15px;
+        }
+        #box5{
+            border-radius: 4px;
+        }
+        #box6{
+            border-radius: 20px;
+        }
+        #box7{
+            border-radius: 50%;
+        }
+        #box8{
+            border-radius: 7px;
+        }
+        #box9{
+            border-top-left-radius: 7px;
+            border-top-right-radius: 25px;
+            border-bottom-left-radius: 25px;
+            border-bottom-right-radius: 7px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <table>
+        <thead>
+            <tr class="bor">
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Age</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="bor">
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+
+            </tr>
+            <tr class="bor">
+                <td>Eve</td>
+                <td>Jackson</td>
+                <td>94</td>
+                
+            </tr>
+            <tr class="bor">
+                <td>John</td>
+                <td>Doe</td>
+                <td>80</td>
+
+            </tr>   
+
+        </tbody>
+    </table>
+</div>
+<div class="boxes">
+    <div id="box1" class="box">box-1</div>
+    <div id="box2" class="box">box-2</div>
+    <div id="box3" class="box">box-3</div>
+    <div id="box4" class="box">box-4</div>
+    <div id="box5" class="box">box-5</div>
+    <div id="box6" class="box">box-6</div>
+    <div id="box7" class="box">box-7</div>
+    <div id="box8" class="box">box-8</div>
+    <div id="box9" class="box">box-9</div>
+</div>
+</body>
+</html>

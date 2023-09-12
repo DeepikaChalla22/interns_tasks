@@ -4,11 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      table{
+        margin-top: 10%;
+      }
+      table,td{
+        border-collapse: separate;
+        border-spacing: 0 10px;
+      }
+      h1{
+        background-color: darkgreen;
+        color: white;
+        width: 200px;
+        font-size: 25px;
+      }
+      #submit{
+        background-color: rgb(212, 212, 161);
+      }
+     
+    </style>
+
   </head>
 
   <body>
+    <h1> Task-4</h1>
     <form action="">
-      <table align="center" width="800">
+      <table align="center" width="1000">
         <tr>
           <th>Full Name:</th>
           <td><input type="text" /></td>
@@ -46,7 +67,7 @@
           </td>
         </tr>
         <tr>
-          <th><input type="submit" value="Save" /></th>
+          <th><input id="submit" type="submit" value="Save" /></th>
         </tr>
       </table>
     </form>

@@ -4,54 +4,83 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Task-5</title>
+    <style>
+      .text{
+        width: 99%;
+        
+      }
+      table,td{
+        border-spacing: 0px;
+      }
+      #approval{
+        border: 2px solid;
+      }
+      #last{
+        text-align: right;
+      }
+      #ethnus{
+        color: rgb(142, 3, 142);
+      }
+      .btn{
+        margin-top: 20px;
+    margin-right: 50%;
+    margin-left: 50%;
+      }
+      h1{
+        text-align: center;
+        margin: 0px;
+        color: blue;
+      }
+
+    </style>
   </head>
   <body>
     <form method="" action="">
       <table border="1" align="center" width="800">
-        <h1 align="center">Registration form</h1>
+        <h1 >Registration form</h1>
         <tr>
-          <th>first name</th>
-          <td><input type="text" /></td>
+          <th>First Name</th>
+          <td><input class="text" type="text" /></td>
         </tr>
         <tr>
-          <th>last name</th>
-          <td><input type="text" /></td>
+          <th>Last Name</th>
+          <td><input class="text" type="text" /></td>
         </tr>
         <tr>
           <th>Email</th>
-          <td><input type="email" /></td>
+          <td><input class="text" type="email" /></td>
         </tr>
         <tr>
           <th>Password</th>
-          <td><input type="password" /></td>
+          <td><input class="text" type="password" /></td>
         </tr>
         <tr>
           <th>Re-enter Password</th>
-          <td><input type="password" /></td>
+          <td><input class="text" type="password" /></td>
         </tr>
         <tr>
           <th>Gender:</th>
           <td>
-            <input type="radio" />Male
+            <input type="radio" name="Gender" />Male
             <hr />
-            <input type="radio" />Female 
+            <input type="radio" name="Gender" />Female 
           </td>
         </tr>
         <tr>
           <th>Age:</th>
-          <td><input type="text" /></td>
+          <td><input class="text" type="text" /></td>
         </tr>
         <tr>
           <th>Phone Number</th>
-          <td><input type="number" /></td>
+          <td><input class="text" type="text" /></td>
         </tr>
         <tr>
           <th>Address</th>
-          <td><textarea rows="8" cols="70"></textarea></td>
+          <td><textarea class="text" rows="8" cols="70"></textarea></td>
         </tr>
         <tr>
             <th>State</th>
-            <td><input type="text" /></td>
+            <td><input class="text" type="text" /></td>
           </tr>
           <tr>
             <th>Country</th>
@@ -77,18 +106,15 @@
             <input type="checkbox" name="x[]" value="h" />Telugu
           </td>
         </tr>
-        <tr >
-            <td><input type="checkbox" name="x[]" value="h" />Hereby I declare all the given details are true</td>
-        </tr>
-        <tr>
-            <td>Log in to <a href=""> Ethnus </a>Website</td>
-        </tr>
+        <tr> <td colspan="2">
+          <input  type="checkbox" />Hereby I declare all the given details are true
+          </td> </tr>
+          <tr> <td id="last" colspan="2">
+            Log in to <a id="ethnus" href=""> Ethnus </a>Website
+            </td> </tr>
       </table>
-    
-    <tr align="center">
-        <td colspan="2" align="center"><input type="submit" value="Register"/>
-        </td>
-        </tr>
+      
+      <button class="btn">Register</button>
     </form>
   </body>
 </html>

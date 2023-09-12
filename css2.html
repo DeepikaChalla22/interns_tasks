@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: 700px  1200px;
+        }
+      .vul {
+        list-style-type: none;
+        margin: 0 20px;
+        padding: 0px;
+        background-color: aqua;
+        width: 25%;
+        height: 300px;
+        border: 1px solid aqua;
+        outline: 2px solid black;
+        outline-offset: 7px;
+        /* border-style: double; */
+        /* display: flex; */
+      }
+      .vli a {
+        display: block;
+        text-decoration: none;
+        padding: 15px;
+        font-size: 25px;
+      }
+      a:hover {
+        background-color: gold;
+        color: white;
+      }
+      .vhead {
+        margin: 30px;
+      }
+      /* Horizontal  */
+      .navbar ul {
+        list-style-type: none;
+        margin: 10px;
+        padding: 0px;
+        overflow: hidden;
+        background-color: lightgray;
+        width: 40%;
+        outline: 2px solid black;
+        outline-offset: 7px;
+      }
+      /* .navbar ul {
+        background-color: rgb(195, 183, 183);
+        padding: 25px;
+        margin: 15px;
+        width: 50%;
+        outline: 2px solid black;
+        outline-offset: 7px;
+      } */
+      .navbar li {
+        /* display: inline; */
+        list-style: none; /* to remove bullet points */
+        padding: 5px 5px;
+        margin: 5px 5px;
+        float: left;
+        border-right: 1px solid blue;
+      }
+      .navbar li a {
+        display: block;
+        color: rgb(128, 9, 240);
+        font-size: 20px;
+        text-align: center;
+        padding: 10px 20px;
+        text-decoration: none;
+      }
+      .navbar a:hover {
+        color: white;
+        background-color: grey;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="ver">
+        <h1 class="vhead">Vertical Navigation bar</h1>
+        <ul class="vul">
+          <li class="vli"><a href="">Home</a></li>
+          <li class="vli"><a href="">Java</a></li>
+          <li class="vli"><a href="">CSS</a></li>
+          <li class="vli"><a href="">HTML</a></li>
+          <li class="vli"><a href="">Bootstrap</a></li>
+        </ul>
+      </div>
+      <div class="hor">
+        <nav class="navbar">
+          <h1>Horizontal Navigation Bar</h1>
+          <ul>
+            <li><a href="" target="_blank">Home</a></li>
+            <span class="vl"></span>
+            <li><a href="#">Java</a></li>
+            <span class="vl"></span>
+            <li><a href="#">CSS</a></li>
+            <span class="vl"></span>
+            <li><a href="#">HTML</a></li>
+            <span class="vl"></span>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!-- Note:Hello sir!I've tried different methods to keep both side by
+    side(flex,float,grid)..still didnt get it sir -->
+  </body>
+</html>
